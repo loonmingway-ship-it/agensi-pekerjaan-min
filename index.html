@@ -1,59 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agensi Pekerjaan Min</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-            margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #004d40;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            color: #666;
-            line-height: 1.6;
-        }
-        .contact-box {
-            margin-top: 30px;
-            padding: 20px;
-            background: #e0f2f1;
-            border-radius: 6px;
-        }
-        .contact-box h3 {
-            margin-top: 0;
-            color: #00796b;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mingway | Recruitment, Manpower Supply & HR Solutions</title>
+<meta name="description" content="Mingway has been serving recruitment and manpower needs since 1983, connecting employers and job seekers through professional workforce solutions.">
+<style>
+:root{--navy:#102d45;--blue:#1976b8;--green:#07964b;--gold:#c69a52;--cream:#f6f3ed;--light:#f5f8fa;--text:#334554;--muted:#697781;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.72}img{display:block;width:100%;height:100%;object-fit:cover}a{text-decoration:none;color:inherit}.container{width:min(1180px,90%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e6ebee}.nav{height:88px;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy)}.logo img{width:58px;height:50px;object-fit:contain}.logo-text{font-size:24px;letter-spacing:1px}.logo sup{font-size:10px;color:var(--green)}.logo small{display:block;color:var(--green);font-size:8px;letter-spacing:1.5px;margin-top:-2px}.links{display:flex;gap:27px;align-items:center;font-size:14px;color:#53616c}.links a:hover{color:var(--green)}.links .cta{background:var(--green);color:#fff;padding:10px 18px}.menu{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+.hero{background:linear-gradient(110deg,#f7fafb 0%,#fff 60%);padding:78px 0 88px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2.6px;color:var(--green);margin-bottom:14px}.hero h1{font-size:65px;line-height:1.04;letter-spacing:-2.5px;color:var(--navy);margin:0 0 23px}.hero h1 span{color:var(--blue)}.hero p{font-size:18px;color:var(--muted);max-width:650px}.buttons{display:flex;gap:12px;margin-top:27px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 22px;font-weight:700;font-size:13px}.green{background:var(--green);color:#fff}.outline{border:1px solid #ccd6dc;background:#fff;color:var(--navy)}.hero-photo{height:490px;border-radius:6px;overflow:hidden;box-shadow:0 20px 50px rgba(16,45,69,.15);position:relative}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(5,28,46,.82))}.photo-label{position:absolute;z-index:2;bottom:25px;left:25px;right:25px;color:#fff}.photo-label strong{font-size:25px;display:block}.photo-label span{font-size:12px;color:#dce8ef}
+.quick{box-shadow:0 8px 28px rgba(0,0,0,.08);background:#fff}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr)}.quick a{padding:23px;border-right:1px solid #e5e9eb;display:flex;gap:13px;align-items:center}.quick a:last-child{border:0}.quick b{color:var(--green);font-size:11px}.quick span{font-weight:700;font-size:13px;line-height:1.35}.quick i{margin-left:auto;color:var(--green)}
+.section{padding:100px 0}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:85px;align-items:center}.about-photo{height:500px;border-radius:6px;overflow:hidden}.copy{font-size:16px;color:var(--muted)}.copy .lead{font-size:22px;line-height:1.55;color:var(--navy)}h2{font-size:48px;line-height:1.1;letter-spacing:-1.5px;color:var(--navy);margin:0 0 22px}.year{font-size:110px;font-weight:900;color:#edf0f2;line-height:1;margin-top:28px}.gold{color:var(--gold)}.link{color:var(--green);font-weight:800}
+.grey{background:var(--light)}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:75px;margin-bottom:50px}.section-head p{color:var(--muted);font-size:17px;padding-top:28px}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{background:#fff;border:1px solid #e2e8eb;overflow:hidden}.service-photo{height:180px}.service-body{padding:25px}.service .num{color:var(--green);font-size:11px;font-weight:800;letter-spacing:2px}.service h3{font-size:20px;color:var(--navy);margin:10px 0 8px}.service p{font-size:14px;color:var(--muted);margin:0 0 12px}
+.feature{padding:100px 0;background:var(--navy);color:#fff}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.feature h2{color:#fff}.feature p{color:#c8d4dd;font-size:17px}.feature-photo{height:500px;border-radius:6px;overflow:hidden}.steps{border-left:1px solid #466277;margin-top:28px}.step{padding:15px 0 15px 24px;border-bottom:1px solid #2d475c}.step b{color:var(--gold);margin-right:15px}.step p{font-size:13px;margin:5px 0 0}
+.split{display:grid;grid-template-columns:1fr 1fr}.panel{min-height:520px;padding:90px 9%;position:relative;overflow:hidden}.panel-photo{position:absolute;inset:0;z-index:0}.panel-photo:after{content:"";position:absolute;inset:0;background:rgba(8,28,45,.68)}.panel-content{position:relative;z-index:1;color:#fff;max-width:560px}.panel-content h2{color:#fff}.panel-content p{color:#e0e7ec;font-size:17px}.panel.light .panel-content{color:var(--text)}.panel.light .panel-photo:after{background:rgba(247,250,251,.90)}.panel.light .panel-content h2{color:var(--navy)}.panel.light .panel-content p{color:var(--muted)}
+.support{padding:100px 0}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.support-photo{height:460px;border-radius:6px;overflow:hidden}.support-list{display:grid;gap:18px}.support-item{display:grid;grid-template-columns:45px 1fr;gap:15px;padding-bottom:18px;border-bottom:1px solid #e5e9eb}.support-item b{width:36px;height:36px;border-radius:50%;background:#eaf7ef;color:var(--green);display:grid;place-items:center}.support-item strong{color:var(--navy)}.support-item p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.mission{background:var(--cream);padding:85px 0}.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.mission p{color:var(--muted);font-size:17px}.contact{background:#eaf4f7;padding:75px 0}.contact-row{display:flex;align-items:center;justify-content:space-between;gap:40px}.contact p{color:var(--muted);font-size:17px}
+footer{background:#0b2031;color:#fff;padding:42px 0}.footer-brand img{width:92px;height:70px;object-fit:contain}.footer-logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;color:#fff}.footer-logo img{width:54px;height:44px;object-fit:contain}.footer-logo sup{font-size:9px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.footer-grid p{color:#aab8c2;font-size:12px;margin:3px 0}
+@media(max-width:900px){.links{display:none;position:absolute;top:88px;left:5%;right:5%;background:#fff;padding:20px;box-shadow:0 10px 30px #0002;flex-direction:column;align-items:flex-start}.links.open{display:flex}.links .cta{padding:8px 14px}.menu{display:block}.hero-grid,.about-grid,.feature-grid,.support-grid,.mission-grid,.section-head{grid-template-columns:1fr;gap:35px}.hero h1{font-size:53px}.services{grid-template-columns:repeat(2,1fr)}.quick-grid{grid-template-columns:repeat(2,1fr)}.quick a:nth-child(2){border-right:0}.split{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.contact-row{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.hero{padding-top:50px}.hero h1{font-size:43px}.hero-photo{height:360px}h2{font-size:37px}.section{padding:72px 0}.services{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr}.quick a{border-right:0;border-bottom:1px solid #e5e9eb}.feature-photo,.about-photo,.support-photo{height:350px}.panel{min-height:500px;padding:65px 8%}}
+</style>
 </head>
 <body>
+<header><div class="container nav">
+<a class="logo" href="#home"><img src="images/mingway-logo.png" alt="Mingway logo"><span><span class="logo-text">MINGWAY<sup>®</sup></span><small>RECRUITMENT · MANPOWER · HR</small></span></a>
+<nav class="links" id="links"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#global">Global Career</a><a href="#jobs">Job Seekers</a><a href="#employers">Employers</a><a href="#contact" class="cta">Contact Us</a></nav>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+</div></header>
 
-    <div class="container">
-        <h1>Agensi Pekerjaan Min</h1>
-        <p>Welcome to our official website. We provide professional employment agency services to connect employers with qualified talent.</p>
-        
-        <div class="contact-box">
-            <h3>Get in Touch</h3>
-            <p>If you have any inquiries, feel free to reach out to us.</p>
-            <p><strong>Email:</strong> loon.mingway@gmail.com</p>
-        </div>
-    </div>
+<section id="home" class="hero"><div class="container hero-grid">
+<div><div class="eyebrow">YOUR RECRUITMENT PARTNER · ESTABLISHED 1983</div>
+<h1>Connecting the right <span>people</span> with the right opportunities.</h1>
+<p>For more than four decades, Mingway has supported employers and job seekers through recruitment, manpower supply and practical human resources solutions.</p>
+<div class="buttons"><a class="btn green" href="#employers">For Employers</a><a class="btn outline" href="#jobs">Find a Job</a></div></div>
+<div class="hero-photo"><img src="https://icehrm.com/blog/content/images/2024/03/pexels-mart-production-7643735.jpg" alt="Professional recruitment interview"><div class="photo-label"><strong>People. Work. Opportunity.</strong><span>Professional recruitment and workforce support</span></div></div>
+</div></section>
 
+<section class="quick"><div class="container quick-grid">
+<a href="#services"><b>01</b><span>Recruitment<br>& Manpower</span><i>→</i></a>
+<a href="#global"><b>02</b><span>International<br>Talent</span><i>→</i></a>
+<a href="#employers"><b>03</b><span>HR Solutions<br>for Employers</span><i>→</i></a>
+<a href="#jobs"><b>04</b><span>Career<br>Opportunities</span><i>→</i></a>
+</div></section>
+
+<section id="about" class="section"><div class="container about-grid">
+<div class="about-photo"><img src="https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional team working together"></div>
+<div><div class="eyebrow">ABOUT MINGWAY</div><h2>More than recruitment. A trusted people partner.</h2>
+<div class="copy"><p class="lead">Established in 1983, Mingway has more than 40 years of experience in manpower supply and recruitment.</p>
+<p>Our journey began with a focus on connecting people with employment opportunities. Over the years, our experience has grown with the changing needs of employers, industries and workers.</p>
+<p>Today, Mingway provides recruitment and workforce support designed to help companies find suitable people while giving job seekers professional guidance as they begin or develop their careers.</p>
+<p>We believe good recruitment is about more than filling a vacancy. It is about understanding the employer's requirements, identifying suitable people and supporting a professional employment journey.</p></div>
+<div class="year">1983</div><a class="link" href="#contact">Talk to Mingway →</a></div>
+</div></section>
+
+<section id="services" class="section grey"><div class="container">
+<div class="section-head"><div><div class="eyebrow">OUR SERVICES</div><h2>Practical workforce solutions for employers.</h2></div>
+<p>Mingway can support different stages of the employment journey — from recruitment and manpower supply to workforce coordination, employee support and development.</p></div>
+<div class="services">
+
+<article class="service"><div class="service-photo"><img src="https://alsaqibrecruitmentgroup.com/wp-content/uploads/2022/11/Requirements-to-hire-foreign-workers-in-Malaysia.jpeg" alt="Foreign workforce recruitment"></div><div class="service-body"><div class="num">02 · INTERNATIONAL</div><h3>Foreign Worker Recruitment</h3><p>We support employers seeking international manpower and help coordinate the recruitment journey with attention to the relevant employment and administrative requirements.</p><a class="link" href="#global">Learn about the journey →</a></div></article>
+<article class="service"><div class="service-photo"><img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="HR team meeting"></div><div class="service-body"><div class="num">03 · HR SUPPORT</div><h3>Human Resources Outsourcing</h3><p>For businesses that need additional support, our HR-focused services can help with workforce coordination and practical employee administration.</p><a class="link" href="#contact">Talk to our team →</a></div></article>
+<article class="service"><div class="service-photo"><img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Business discussion"></div><div class="service-body"><div class="num">04 · COMPLIANCE</div><h3>Regulatory & Administrative Support</h3><p>Employment and workforce processes involve important documentation and regulatory requirements. Mingway provides practical support and guidance within the scope of our services.</p><a class="link" href="#contact">Ask about support →</a></div></article>
+<article class="service"><div class="service-photo"><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional training"></div><div class="service-body"><div class="num">05 · DEVELOPMENT</div><h3>Training & Development</h3><p>We can support customized training and development initiatives that help employees understand workplace expectations, strengthen skills and adapt to changing requirements.</p><a class="link" href="#contact">Discuss training →</a></div></article>
+<article class="service"><div class="service-photo"><img src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Employees working together"></div><div class="service-body"><div class="num">06 · WORKFORCE CARE</div><h3>Employee Support</h3><p>We understand that successful employment also depends on practical support. Our approach can include workplace guidance and assistance for employees settling into a new environment.</p><a class="link" href="#contact">Learn more →</a></div></article>
+</div></div></section>
+
+<section id="global" class="feature"><div class="container feature-grid">
+<div><div class="eyebrow" style="color:#d2a55b">GLOBAL CAREER JOURNEY</div><h2>Supporting careers across borders.</h2>
+<p>Mingway helps international talents explore employment opportunities in Malaysia while providing practical support throughout the transition into a new workplace and environment.</p>
+<p>The journey can involve recruitment, matching, cultural adaptation, regulatory guidance and practical settling-in support. Each stage is approached with clear communication and professional assistance.</p>
+<div class="steps">
+<div class="step"><b>01</b><strong>International Recruitment</strong><p>Connecting employers with suitable talent through structured recruitment and matching.</p></div>
+<div class="step"><b>02</b><strong>Cultural Adaptation</strong><p>Helping new employees understand Malaysian workplace expectations and adapt to a new environment.</p></div>
+<div class="step"><b>03</b><strong>Regulatory Support</strong><p>Providing practical guidance on relevant employment and administrative processes.</p></div>
+<div class="step"><b>04</b><strong>Assisted Living</strong><p>Where applicable, providing guidance around accommodation, local resources and settling into daily life.</p></div>
+</div></div>
+<div class="feature-photo"><img src="https://icehrm.com/blog/content/images/2024/03/pexels-mart-production-7643735.jpg" alt="International recruitment discussion"></div>
+</div></section>
+
+<section id="jobs" class="split">
+<div class="panel light"><div class="panel-photo"><img src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Job seeker interview"></div><div class="panel-content">
+<div class="eyebrow">FOR JOB SEEKERS</div><h2>Start your next career journey.</h2>
+<p>Looking for a new job can be a major step. Mingway helps job seekers connect with employment opportunities and understand the recruitment process.</p>
+<p>We aim to make the journey clearer — from understanding suitable roles and submitting your information to preparing for the next stage of recruitment.</p>
+<a class="btn green" href="#contact">Submit Your Enquiry</a></div></div>
+<div id="employers" class="panel"><div class="panel-photo"><img src="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Employer workforce meeting"></div><div class="panel-content">
+<div class="eyebrow" style="color:#d2a55b">FOR EMPLOYERS</div><h2>Build the workforce your business needs.</h2>
+<p>Recruitment takes time, attention and a clear understanding of your operational requirements. Mingway works with employers to understand vacancies and identify suitable workforce solutions.</p>
+<p>Whether you need international manpower or broader HR support, our team can discuss your requirements and the appropriate next step.</p>
+<a class="btn green" href="#contact">Request Recruitment Support</a></div></div>
+</section>
+
+<section class="support"><div class="container support-grid">
+<div class="support-photo"><img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional team collaboration"></div>
+<div><div class="eyebrow">THE MINGWAY APPROACH</div><h2>Professional service with a people-first mindset.</h2>
+<p class="copy">Our experience has taught us that employers and job seekers need more than a name or a database of candidates. They need communication, coordination and dependable support throughout the employment journey.</p>
+<div class="support-list">
+<div class="support-item"><b>01</b><div><strong>Professional recruitment</strong><p>Structured communication and candidate matching around the requirements provided.</p></div></div>
+<div class="support-item"><b>02</b><div><strong>Responsive workforce support</strong><p>Practical assistance as employer requirements and workforce needs change.</p></div></div>
+<div class="support-item"><b>03</b><div><strong>Career guidance</strong><p>Helping job seekers understand opportunities and move through the recruitment process.</p></div></div>
+<div class="support-item"><b>04</b><div><strong>Long-term relationships</strong><p>Building relationships with companies and people beyond a single recruitment transaction.</p></div></div>
+</div></div></div></section>
+
+<section class="mission"><div class="container mission-grid">
+<div><div class="eyebrow">OUR MISSION</div><h2>Creating value through people.</h2><p>We strive to maintain high standards of professionalism, deliver value-added services and provide complete human resources solutions for companies and job seekers.</p></div>
+<div><div class="eyebrow">OUR VISION</div><h2>A reputable and comprehensive HR partner.</h2><p>Our vision is to build Mingway as a reputable and comprehensive human resources and workforce solutions provider, recognized for professionalism, service excellence, innovation and long-term commitment to people.</p></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="container contact-row"><div><div class="eyebrow">LET'S WORK TOGETHER</div><h2>Tell us what you need.</h2><p>Whether you are an employer looking for manpower or a job seeker looking for your next opportunity, contact Mingway to start a conversation.</p></div><a class="btn green" href="mailto:info@mingway.com">Contact Mingway →</a></div></section>
+
+<footer><div class="container footer-grid"><div class="footer-brand"><img src="images/mingway-logo.png" alt="Mingway logo"></div>
+<div><div class="footer-logo"><img src="images/mingway-logo.png" alt="Mingway logo"><span>MINGWAY<sup>®</sup></span></div><p>Established in 1983 · Recruitment · Manpower · Human Resources</p></div>
+<div><p>About Us</p><p>Our Services</p><p>Job Seekers</p><p>Employers</p></div>
+<div><p>© 2026 Mingway. All rights reserved.</p><p>Malaysia</p></div>
+</div></footer>
+<script>
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('open')));
+</script>
 </body>
 </html>
